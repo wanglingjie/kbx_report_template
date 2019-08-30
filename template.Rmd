@@ -7,7 +7,9 @@ date: "`r Sys.Date()`"
 output: memor::pdf_memo
 ---
 
-```{r setup}
+\pagebreak
+
+```{r setup, warning=FALSE, message=FALSE}
 library(knitr)
 library(kableExtra)
 library(ggplot2)
@@ -17,6 +19,7 @@ library(showtext)
 opts_chunk$set(warning = FALSE, message = FALSE, fig.showtext = TRUE)
 old <- theme_set(theme_minimal() + theme(text = element_text(family = 'Noto Sans CJK SC')))
 ```
+
 
 您好，世界！
 
